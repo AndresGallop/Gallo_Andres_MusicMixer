@@ -1,0 +1,214 @@
+body{
+	display: flex;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.topMenu {
+	display: flex;
+	width: 1080px;
+	height: 75px;
+	flex-direction: column;
+}
+
+
+.menu{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 1080px;
+	height: 60px;
+	background-color: Black;
+}
+
+.menuNav a{
+	color: white;
+	font-style: italic;
+}
+
+.logo{
+	width: 150px;
+	height: 50px;
+	background-color: red;
+	margin-right: 365px;
+
+}
+
+ul{
+	width: 500px;
+	margin-right: 50px;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+a{
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: Black;
+}
+
+
+h2{
+	font-family: 'Domine', serif;
+	font-style: italic;
+}
+
+h3{
+	font-family: 'Domine', serif;
+}
+
+h1{
+	font-family: 'Domine', serif;
+}
+
+p{
+	font-family: 'Domine', serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.game{
+	height: 600px;
+	display: flex;
+	justify-content: center; 
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.button a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	background-color: pink;
+	margin-right:750px; 
+}
+
+.sound-board{
+	display: flex;
+	width: 850px;
+	height: 350px;
+	background-color: blue;
+}
+
+.hidden{
+	display: none;
+}
+
+.control{
+	display: flex;
+	width: 700px;
+	height: 150px;
+	background-color: green;
+}
+
+.footer{
+	display: flex;
+	width: 1080px;
+	height: 260px;
+	background-color: black;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction:column;
+	padding-bottom: -20px;
+}
+
+.icons{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 300px;
+	height: 50px;
+	margin:40px;
+}
+
+.iconi{
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/insta.jpg);
+	background-size: cover;
+	background-position:center;
+}
+
+.iconf{
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/fbook.png);
+	background-size: cover;
+	background-position:center;
+}
+
+.icont{
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/twit.jpg);
+	background-size: cover;
+	background-position:center;
+}
+
+.footer p{
+	color: white;
+}
+
+.buttones{
+	margin-top:  -20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 30px;
+}
+
+.buttonf{
+	display: flex;
+	width: 145px;
+	height: 20px;
+	border: solid 2px ;
+	justify-content: center;
+	align-items:flex-end;
+}
+
+.buttonf a{
+	display: flex;
+	justify-content: center;
+	border: solid 2px white; 
+	width: 145px;
+}
+
+a:hover{
+	background-color: lightblue;
+
+}
+
+.footer h2{
+	margin-top: 45px;
+	color: white;
+	letter-spacing: 3px;
+	margin-bottom: 40px;
+}
+
+.final{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.line{
+	margin-bottom: 15px;
+	width: 950px;
+	height: 1px;
+	background-color: grey;
+}
+
+
+.final p{
+	margin-bottom: 10px;
+	color: grey;
+	font-size: 12px;
+}

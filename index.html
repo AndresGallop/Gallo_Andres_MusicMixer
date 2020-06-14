@@ -5,8 +5,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Gehwol</title>
-	<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Domine&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="mainContainer">
@@ -30,9 +29,12 @@
 			</div>
 
 			<!-- Switch the Scenario -->
-        <p>click the band to change Scenario!</p>
+	    <section class="bands">
+
+        <h1 class="titl">Click the band to change Scenario!</h1>
+        <div class="boards">
         <nav id="buttonHolder">
-            <h3 class="hidden">Select Image</h3>
+            <h1 class="hidden">Select Image</h1>
             <img src="images/rock.jpg" data-bgkey="0" alt="band background image">
             <img src="images/jazz.jpg" data-bgkey="1" alt="band background image">
             <img src="images/metal.jpg" data-bgkey="2" alt="band background image">
@@ -41,14 +43,19 @@
 
 			<!-- drop the sound pieces here -->
         <div class="sound-board">
-            <h3 class="hidden">The Drop Zone</h3>
+            <h1 class="hiddenn">The Drop Zone</h1>
+            <div class="drop cat"></div>
             <div class="drop dog"></div>
             <div class="drop chicken"></div>
             <div class="drop sheep"></div>
+
         </div>
+        </div>
+        </section>
+
 			 <!-- these are the draggable sound pieces -> drag them to the top -->
         <div class="sound-pieces"><!-- parent node-->
-            <h3 class="hidden">The Drag Zone</h3>
+            <h1 class="hidden">The Drag Zone</h1>
             <img id='miaw' data-track="miaw.mp3" src="images/miaw.jpg" alt="miaw" class="puzzle-image 0" draggable="true">
             <img id='guau' data-track="guau.mp3" src="images/guau.jpg" alt="guau" class="puzzle-image 1" draggable="true">
             <img id='pio' data-track="pio.mp3" src="images/pio.jpg" alt="pio" class="puzzle-image 3" draggable="true">
@@ -57,20 +64,11 @@
 		</section>
 
 		<div class="footer">
-
-          <section class="icons">
-			<section class="iconi"></section>
-			<section class="iconf"></section>
-			<section class="icont"></section>
-		  </section>
-
-
-			<section class="buttones">
+			
 			<section class="buttonf">
-				<li><a href="#"><p>Download App</p></a></li>
+				<li><a href="#">Download App</a></li>
 			</section>
-		    </section>
-
+		    
 
 			<h2>Replay</h2>
 

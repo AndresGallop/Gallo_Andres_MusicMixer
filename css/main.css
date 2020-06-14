@@ -2,6 +2,7 @@ body{
 	display: flex;
 	margin-left: 150px;
 	margin-right: 150px;
+	background-color: black;
 }
 
 .topMenu {
@@ -22,8 +23,19 @@ body{
 	justify-content: flex-end;
 	align-items: center;
 	width: 1080px;
-	height: 60px;
-	background-color: Black;
+	height: 40px;
+	background-color: rgba(255, 54, 0, 1);
+}
+
+h1{
+	color: White;
+	font-family: 'Balsamiq Sans', cursive; 
+	margin-left: 40px;
+}
+
+h2{
+	font-size: 50px;
+	font-family: 'Balsamiq Sans', cursive; 
 }
 
 ul{
@@ -38,28 +50,103 @@ a{
 	display: block;
 	padding: 10px 20px;
 	text-decoration: none;
-	color: White;
+	color: white;
+}
+
+a:hover{
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: black;
+	background-color:  #9666ff;
 }
 
 
-.heroImage{
+.game{
 	display: flex;
-	width: 1080px;
-	height: 500px;
-	flex-wrap: wrap;
-	align-content: flex-start;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
 }
 
-.image{
-	width: 1080px;
+.titl{
+	margin-top: 0px;
+	margin-right: 750px;
+	font-size: 12px;
+	color: grey;
+}
+
+.bands{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 1000px;
 	height: 500px;
-	background-image: url(../images/heroimg.png);
-	background-size: cover;
-	background-position:center;
+	justify-content: center;
+	align-items: center;
+	background-color: ;
+}
+
+.boards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 
 
 
+.button a{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	width: 40px;
+	height: 10px;
+	color: black;
+	background-color: #9666ff;
+	border: solid 2px black;
+	margin-right: 840px;
+	margin-bottom: 0px;
+}
+
+#buttonHolder{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 200px;
+	height: 400px;
+	background-color: rgba(204, 255, 51, 0.5);
+	margin-right: 20px;
+	justify-content:space-around;
+}
+
+.sound-board{
+	display: flex;
+	justify-content: center;
+	width: 700px;
+	height: 400px;
+	background-color: rgba(189, 255, 153, 0.5);
+}
+
+.cat{
+	width: 80px;
+	height: 80px;
+	background-image: url(images/cat.jpg);
+}
+
+.sound-pieces{
+	display: flex;
+	width: 920px;
+	height:100px;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(128, 0, 128, 0.5);
+	margin-bottom: 30px;
+}
 
 
 
@@ -69,8 +156,8 @@ a{
 .footer{
 	display: flex;
 	width: 1080px;
-	height: 360px;
-	background-color: black;
+	height: 280px;
+	background-color: rgba(255, 54, 0, 1);
 	justify-content: center;
 	justify-content: space-around;
 	align-items: center;
@@ -78,64 +165,41 @@ a{
 	padding-bottom: -20px;
 }
 
-.icons{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 300px;
-	height: 50px;
-	margin:40px;
-}
-
-.iconi{
-	width: 40px;
-	height: 40px;
-	background-image: url(../images/insta.jpg);
-	background-size: cover;
-	background-position:center;
-}
-
-.iconf{
-	width: 40px;
-	height: 40px;
-	background-image: url(../images/fbook.png);
-	background-size: cover;
-	background-position:center;
-}
-
-.icont{
-	width: 40px;
-	height: 40px;
-	background-image: url(../images/twit.jpg);
-	background-size: cover;
-	background-position:center;
-}
-
 .footer p{
 	color: white;
 }
 
-.buttones{
-	margin-top: 20px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 320px;
-	height: 30px;
 
-}
-
-.buttonf{
+.buttonf  a{
+	color: black;
 	display: flex;
 	width: 130px;
-	height: 28px;
-	border: solid 2px white;
+	height: 10px;
+	border: solid 2px black;
 	justify-content: center;
-	align-items:flex-end;
+	align-items:center;
+	background-color: #9666ff;
 }
 
+.buttonf  a:hover{
+	background-color: pink;
+}
+
+.drop{
+	width: 120px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0.30);
+	margin-top: 100px;
+	margin-right: 40px;
+	border-radius: 40px;
+}
+
+.hiddenn{
+	display: none;
+}
+
+
 .footer h2{
-	margin-top: 45px;
 	color: white;
 	letter-spacing: 3px;
 	margin-bottom: 40px;
@@ -150,15 +214,15 @@ a{
 }
 
 .line{
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 	width: 950px;
 	height: 1px;
-	background-color: grey;
+	background-color: white;
 }
 
 
 .final p{
-	margin-bottom: 10px;
-	color: grey;
+	margin-bottom: 0px;
+	color: white;
 	font-size: 12px;
 }

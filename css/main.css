@@ -75,6 +75,13 @@ a:hover{
 	margin-right: 750px;
 	font-size: 12px;
 	color: grey;
+
+}
+
+.hidden{
+	align-self: flex-start;
+	margin-left: 20px;
+	
 }
 
 .bands{
@@ -128,7 +135,8 @@ a:hover{
 	justify-content: center;
 	width: 700px;
 	height: 400px;
-	background-color: rgba(189, 255, 153, 0.5);
+	background-image: url(../images/rock.jpg);
+	background-size: cover;
 }
 
 .cat{

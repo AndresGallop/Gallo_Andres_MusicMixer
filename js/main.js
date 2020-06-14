@@ -9,11 +9,15 @@
 
 let imageNames = ["miaw", "guau", "pio", "beee"];
 
-    function changeImageSet() { //ESTA ES PA CAMBIAR LAS PIEZAS++++++++++++++++++++++++
+    function changeScenario() { //ESTA ES PA CAMBIAR LAS PIEZAS++++++++++++++++++++++++
         // change all the image elements on the page -> draggable image sources
 
       imageNames.forEach((piece, index) => {
         soundTracks[index].src = `images/${piece + this.dataset.bgkey}.jpg`;
+      });
+
+      imageNames.forEach((piece, index) => {
+        soundTracks[index].src = `assets/${piece + this.dataset.bgkey}.mp3`;
       });//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         // let newBackgroundImage = `images/backGround${this.dataset.bgkey}.jpg`; (contenced down to one line)
@@ -49,7 +53,7 @@ let imageNames = ["miaw", "guau", "pio", "beee"];
 
 
     // click on the bottom buttons to change the puzzle image we're working with
-    Bands.forEach(button => button.addEventListener('click', changeImageSet));
+    Bands.forEach(button => button.addEventListener('click', changeScenario));
     soundTracks.forEach(piece => piece.addEventListener('dragstart', allowDrag));
 
     characters.forEach(zone => {
@@ -57,5 +61,5 @@ let imageNames = ["miaw", "guau", "pio", "beee"];
         zone.addEventListener('drop', allowDrop);
     });
     //research call, apply and bind
-    changeImageSet.call(Bands[0]); //empulates a click on the first button
+    changeScenario.call(Bands[0]); //empulates a click on the first button
 })();

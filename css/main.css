@@ -2,7 +2,10 @@ body{
 	display: flex;
 	margin-left: 150px;
 	margin-right: 150px;
+
 	background-color: black;
+
+
 }
 
 .topMenu {
@@ -12,11 +15,14 @@ body{
 	flex-direction: column;
 }
 
+
 .ad{
 	width: 1080px;
 	height: 15px;
 	background-color: black;
 }
+
+
 
 .menu{
 	display: flex;
@@ -36,11 +42,32 @@ h1{
 h2{
 	font-size: 50px;
 	font-family: 'Balsamiq Sans', cursive; 
+
+	height: 60px;
+	background-color: Black;
+}
+
+.menuNav a{
+	color: white;
+	font-style: italic;
+}
+
+.logo{
+	width: 150px;
+	height: 50px;
+	background-color: red;
+	margin-right: 365px;
+
+
 }
 
 ul{
 	width: 500px;
+
 	margin:0;
+
+	margin-right: 50px;
+
 	list-style: none;
 	display: flex;
 	justify-content: flex-end;
@@ -50,6 +77,7 @@ a{
 	display: block;
 	padding: 10px 20px;
 	text-decoration: none;
+
 	color: white;
 }
 
@@ -128,10 +156,52 @@ a:hover{
 	background-color: rgba(204, 255, 51, 0.5);
 	margin-right: 20px;
 	justify-content:space-around;
+
+	color: Black;
+}
+
+
+h2{
+	font-family: 'Domine', serif;
+	font-style: italic;
+}
+
+h3{
+	font-family: 'Domine', serif;
+}
+
+h1{
+	font-family: 'Domine', serif;
+}
+
+p{
+	font-family: 'Domine', serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.game{
+	height: 600px;
+	display: flex;
+	justify-content: center; 
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.button a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	background-color: pink;
+	margin-right:750px; 
+
 }
 
 .sound-board{
 	display: flex;
+
 	justify-content: center;
 	width: 700px;
 	height: 400px;
@@ -166,6 +236,29 @@ a:hover{
 	width: 1080px;
 	height: 280px;
 	background-color: rgba(255, 54, 0, 1);
+
+	width: 850px;
+	height: 350px;
+	background-color: blue;
+}
+
+.hidden{
+	display: none;
+}
+
+.control{
+	display: flex;
+	width: 700px;
+	height: 150px;
+	background-color: green;
+}
+
+.footer{
+	display: flex;
+	width: 1080px;
+	height: 260px;
+	background-color: black;
+
 	justify-content: center;
 	justify-content: space-around;
 	align-items: center;
@@ -173,9 +266,46 @@ a:hover{
 	padding-bottom: -20px;
 }
 
+
+
+.icons{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 300px;
+	height: 50px;
+	margin:40px;
+}
+
+.iconi{
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/insta.jpg);
+	background-size: cover;
+	background-position:center;
+}
+
+.iconf{
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/fbook.png);
+	background-size: cover;
+	background-position:center;
+}
+
+.icont{
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/twit.jpg);
+	background-size: cover;
+	background-position:center;
+}
+
+
 .footer p{
 	color: white;
 }
+
 
 
 .buttonf  a{
@@ -208,6 +338,40 @@ a:hover{
 
 
 .footer h2{
+
+.buttones{
+	margin-top:  -20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 30px;
+}
+
+.buttonf{
+	display: flex;
+	width: 145px;
+	height: 20px;
+	border: solid 2px ;
+	justify-content: center;
+	align-items:flex-end;
+}
+
+.buttonf a{
+	display: flex;
+	justify-content: center;
+	border: solid 2px white; 
+	width: 145px;
+}
+
+a:hover{
+	background-color: lightblue;
+
+}
+
+.footer h2{
+	margin-top: 45px;
+
 	color: white;
 	letter-spacing: 3px;
 	margin-bottom: 40px;
@@ -222,15 +386,27 @@ a:hover{
 }
 
 .line{
+
 	margin-bottom: 0px;
 	width: 950px;
 	height: 1px;
 	background-color: white;
+
+	margin-bottom: 15px;
+	width: 950px;
+	height: 1px;
+	background-color: grey;
+
 }
 
 
 .final p{
+
 	margin-bottom: 0px;
 	color: white;
+
+	margin-bottom: 10px;
+	color: grey;
+
 	font-size: 12px;
 }

@@ -41,14 +41,20 @@
 			console.log('dropped me');
 
 			let soundOn = event.dataTransfer.getData("soundTaken");
+			let currentTrack = `assets/${this.dataset.track}`;
 			
 
 			
 				event.target.appendChild(document.querySelector(`#${soundOn}`));
 
+				audio.src = currentTrack;
+	    	    audio.load();
+
+				
+             
 		}
 
-		function playsound (event) {
+		function playsound () {
 	    	// the 'this' keyword refers to the image you've clicked on
 	    	let currentTrack = `assets/${this.dataset.track}`; //ESTO ES DINAMICO, LO QUE SIGNIFICA QUE VA A CAMBIAR
 
@@ -56,8 +62,8 @@
 	    	audio.load();//Load method loads whatever resource(src) you indicate
 
 	    	
-	    	playAudio();// Aqui estoy llamando la funcion que tengo aqui debajo, se llama playAudio
-
+	    	// Aqui estoy llamando la funcion que tengo aqui debajo, se llama playAudio
+           playAudio();
 	    }
 
 	    function playAudio() {

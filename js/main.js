@@ -8,7 +8,9 @@
 
 	let animalNames = ["left", "midLeft", "midRight", "right"],
 	    theSounds = document.querySelectorAll('.sound'),
-	    audio = document.querySelector("audio");
+	    audio = document.querySelector("audio"),
+			theGenres = document.querySelectorAll(".concert");
+
 
 
 
@@ -24,7 +26,7 @@
 		function drag(event) {
 
 			console.log('dragging me');
-			event.dataTransfer.setData("soundTaken", this.id);
+			event.dataTransfer.setData(let = "soundTaken", this.id);
 
 		}
 
@@ -41,35 +43,58 @@
 			console.log('dropped me');
 
 			let soundOn = event.dataTransfer.getData("soundTaken");
-			let currentTrack = `assets/${this.dataset.track}`;
-			
 
-			
+
 				event.target.appendChild(document.querySelector(`#${soundOn}`));
 
-				audio.src = currentTrack;
-	    	    audio.load();
-
-				
-             
 		}
 
+
+
 		function playsound () {
+			event.preventDefault();
+
+
+			console.log('Proving if it works');
 	    	// the 'this' keyword refers to the image you've clicked on
 	    	let currentTrack = `assets/${this.dataset.track}`; //ESTO ES DINAMICO, LO QUE SIGNIFICA QUE VA A CAMBIAR
+
 
 	    	audio.src = currentTrack;
 	    	audio.load();//Load method loads whatever resource(src) you indicate
 
-	    	
 	    	// Aqui estoy llamando la funcion que tengo aqui debajo, se llama playAudio
            playAudio();
 	    }
 
 	    function playAudio() {
 	    	// play the audio track
-	    	audio.play();              //<------Es una funcion porque tiene los brackets ahí 
+	    	audio.play();              //<------Es una funcion porque tiene los brackets ahí
 		}
+
+
+		function startconcert () {
+
+
+
+			console.log('Proving if it works');
+	    	// the 'this' keyword refers to the image you've clicked on
+	    	let musicalscenario = `assets/${this.dataset.track}`; //ESTO ES DINAMICO, LO QUE SIGNIFICA QUE VA A CAMBIAR
+
+
+	    	audio.src = musicalscenario;
+	    	audio.load();//Load method loads whatever resource(src) you indicate
+
+	    	// Aqui estoy llamando la funcion que tengo aqui debajo, se llama playAudio
+           playconcert();
+	    }
+
+	    function playconcert() {
+	    	// play the audio track
+	    	audio.play();              //<------Es una funcion porque tiene los brackets ahí
+		}
+
+
 
 		/*function playsound2 (event) {
 
@@ -83,7 +108,7 @@
         //ESTA VARIABLE BUSCA SI EL CODIGO (Keycode = 85 por ejemplo) EXISTE Y LO GUARDA EN ESTA MISMA
         //Y SELECCIONA EL CÓDIGO DE LA VARIABLE CARD1 PORQUE CARD1 = (Keycode = 85 por ejemplo) AHORA
 		let card2 = document.querySelector(`audio[data-track="${card1}" ]`);
-		                       
+
 
 
 		//if you have a match, play card2 (the matching audio element)
@@ -91,17 +116,17 @@
 		if (card2) { card2.play(); }
 
 		//debugger;
-	
+
 		}*/
 
 
 
-	//MAKING THE FUNCTIONS RUN		
+	//MAKING THE FUNCTIONS RUN
 
 		 musicGenre.forEach(button => button.addEventListener('click', changeMusicGenre));
+		 musicGenre.forEach(button => button.addEventListener('click', startconcert));
 		 theSounds.forEach(piece => piece.addEventListener('dragstart', drag));
 		 theSounds.forEach(piece => piece.addEventListener('dragover', dragover));
-		 window.addEventListener('keydown', playsound);
 
 
     //ADDING VARIABLES TO THE ARRAY OF A CURRENT VARIABLE
@@ -112,7 +137,7 @@
 	}
 
 	    for (noisy of theSounds) {
-	    	noisy.addEventListener('click', playsound);
+	    	noisy.addEventListener('dragend', playsound);
 	    }
 
 

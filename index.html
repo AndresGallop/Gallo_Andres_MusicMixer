@@ -17,7 +17,7 @@
 					<ul>
 						<li><a href="index.html">Demo</a></li>
 						<li><a href="contact.html">How to play</a></li>
-						
+
 					</ul>
 				</nav>
 			</section>
@@ -35,10 +35,10 @@
         <div class="boards">
         <div id="buttonHolder">
             <h1 class="hidden">Select Musical Genre</h1>
-            <img src="images/rock.jpg" data-bgkey="0" alt="scenario image">
-            <img src="images/jazz.jpg" data-bgkey="1" alt="scenario image">
-            <img src="images/metal.jpg" data-bgkey="2" alt="scenario image">
-            <img src="images/reggae.jpg" data-bgkey="3" alt="scenario image">
+            <img src="images/rock.jpg" data-track="rock.mp3" data-bgkey="0" alt="scenario image">
+            <img src="images/jazz.jpg" data-track="jazz.mp3" data-bgkey="1" alt="scenario image">
+            <img src="images/metal.jpg" data-track="metal.mp3" data-bgkey="2" alt="scenario image">
+            <img src="images/reggae.jpg" data-track="reggae.mp3" data-bgkey="3" alt="scenario image">
         </div>
 
 			<!-- drop the sound pieces here -->
@@ -62,10 +62,17 @@
             <img id='beee' data-track="beee.mp3" src="images/beee.jpg" alt="beee" class="sound" draggable="true">
         </div><!-- end parent node/////////////////////////////////////////////////////////////////////////////////-->
 
-        <audio data-track="65" src="assets/meow.mp3"></audio>
+        <audio data-track="meow.mp3" src="assets/meow.mp3"></audio>
         <audio data-track="guau.mp3" src="assets/guau.mp3"></audio>
         <audio data-track="pio.mp3" src="assets/pio.mp3"></audio>
         <audio data-track="beee.mp3" src="assets/beee.mp3"></audio>
+
+				<audio class="concert" data-track="rock.mp3" src="assets/rock.mp3"></audio>
+				<audio class="concert" data-track="jazz.mp3" src="assets/jazz.mp3"></audio>
+				<audio class="concert" data-track="metal.mp3" src="assets/metal.mp3"></audio>
+				<audio class="concert" data-track="reggae.mp3" src="assets/beee.mp3"></audio>
+
+
 
 		</section>
 
@@ -73,11 +80,11 @@
 
 
 		<div class="footer">
-			
+
 			<div class="buttonf">
 				<li><a href="#">Download App</a></li>
 			</div>
-		    
+
 
 			<h2>Farmy</h2>
 
@@ -86,7 +93,7 @@
 			<p class="copy">Copyright 2020 Farmy.</p>
 			</section>
 
-		</div>		
+		</div>
 	</div>
 	<script src="js/main.js"></script>
 </body>

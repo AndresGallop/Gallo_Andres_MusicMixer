@@ -33,17 +33,17 @@
 
         <h1 class="titl">Click the band to change Scenario!</h1>
         <div class="boards">
-        <nav id="buttonHolder">
+        <div id="buttonHolder">
             <h1 class="hidden">Select Musical Genre</h1>
-            <img src="images/roc.jpg" data-bgkey="0" alt="scenario image">
+            <img src="images/rock.jpg" data-bgkey="0" alt="scenario image">
             <img src="images/jazz.jpg" data-bgkey="1" alt="scenario image">
             <img src="images/metal.jpg" data-bgkey="2" alt="scenario image">
             <img src="images/reggae.jpg" data-bgkey="3" alt="scenario image">
-        </nav>
+        </div>
 
 			<!-- drop the sound pieces here -->
         <div class="sound-board">
-            <h1 class="hiddenn">The Drop Zone</h1>
+            <h1 class="none">The Drop Zone</h1>
             <div class="drop cat"></div>
             <div class="drop dog"></div>
             <div class="drop chicken"></div>
@@ -53,27 +53,30 @@
         </div>
         </section>
 
-			 <!-- these are the draggable sound pieces -> drag them to the top -->
+			 <!-- these are the draggable sound pieces -> drag them to the top /////////////////////////////////////-->
         <div class="sound-pieces"><!-- parent node-->
-            <h1 class="hidden">Sounds:</h1>
-            <img id='miaw' data-track="miaw.mp3" src="images/miaw.jpg" alt="miaw" class="puzzle-image 0" draggable="true">
-            <img id='guau' data-track="guau.mp3" src="images/guau.jpg" alt="guau" class="puzzle-image 1" draggable="true">
-            <img id='pio' data-track="pio.mp3" src="images/pio.jpg" alt="pio" class="puzzle-image 3" draggable="true">
-            <img id='beee' data-track="beee.mp3" src="images/beee.jpg" alt="beee" class="puzzle-image 3" draggable="true">
-        </div><!-- end parent node-->
+            <h1 class="hidden sound_title">Sounds:</h1>
+            <img id='meow' data-track="meow.mp3" src="images/miaw.jpg" alt="meow" class="sound" draggable="true">
+            <img id='guau' data-track="guau.mp3" src="images/guau.jpg" alt="guau" class="sound" draggable="true">
+            <img id='pio' data-track="pio.mp3" src="images/pio.jpg" alt="pio" class="sound" draggable="true">
+            <img id='beee' data-track="beee.mp3" src="images/beee.jpg" alt="beee" class="sound" draggable="true">
+        </div><!-- end parent node/////////////////////////////////////////////////////////////////////////////////-->
 		</section>
+
+
+
 
 		<div class="footer">
 			
-			<section class="buttonf">
+			<div class="buttonf">
 				<li><a href="#">Download App</a></li>
-			</section>
+			</div>
 		    
 
 			<h2>Farmy</h2>
 
 			<section class="final">
-			<section class="line"></section>
+			<div class="line"></div><br>
 			<p class="copy">Copyright 2020 Farmy.</p>
 			</section>
 

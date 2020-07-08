@@ -100,7 +100,7 @@ if (event.currentTarget.children.length === 0) {
 
 
 
-			console.log('Proving if it works');
+			console.log('DO IT');
 	    	// the 'this' keyword refers to the image you've clicked on
 	    	let musicalscenario = `assets/${this.dataset.track}`; //ESTO ES DINAMICO, LO QUE SIGNIFICA QUE VA A CAMBIAR
 
@@ -117,7 +117,7 @@ if (event.currentTarget.children.length === 0) {
 
 
         audio.play();
-				new Audio(audio.src).play(); 
+				new Audio(audio.src).play();
 
 	      //new Audio('file.mp3').play()
 

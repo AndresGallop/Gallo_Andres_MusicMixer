@@ -70,19 +70,19 @@ if (event.currentTarget.children.length === 0) {
 
 
 
-		function playsound () {
+		function playsound () { //PLAY THE AUDIOS THAT MATCH THE ANIMALS
 			event.preventDefault();
 
 
 			console.log('Proving if it works');
 	    	// the 'this' keyword refers to the image you've clicked on
-	    	let currentTrack =  `assets/${this.dataset.track}`; //ESTO ES DINAMICO, LO QUE SIGNIFICA QUE VA A CAMBIAR
+	    	let currentTrack =  `assets/${this.dataset.track}`;
 
 
 	    	audio.src = currentTrack;
-	    	audio.load();//Load method loads whatever resource(src) you indicate
+	    	audio.load();
 
-	    	// Aqui estoy llamando la funcion que tengo aqui debajo, se llama playAudio
+
            playAudio();
 	    }
 
@@ -90,25 +90,25 @@ if (event.currentTarget.children.length === 0) {
 	    	// play the audio track
 
 				audio.play();
-				new Audio(audio.src).play();              //<------Es una funcion porque tiene los brackets ahí
+				new Audio(audio.src).play();
 
 		}
 
 
 
-		function startconcert () {
+		function startconcert () { //PLAY THE AUDIOS THAT MATCH THE SCENARIOS(MUSICAL GENRE)
 
 
 
 			console.log('DO IT');
-	    	// the 'this' keyword refers to the image you've clicked on
-	    	let musicalscenario = `assets/${this.dataset.track}`; //ESTO ES DINAMICO, LO QUE SIGNIFICA QUE VA A CAMBIAR
+	    	// the 'this' keyword refers to the image or element you've clicked on
+	    	let musicalscenario = `assets/${this.dataset.track}`; //THIS IS DINAMIC, QHICH MEANS IT CAN CHANGE
 
 
 	    	audio.src = musicalscenario;
 	    	audio.load();//Load method loads whatever resource(src) you indicate
 
-	    	// Aqui estoy llamando la funcion que tengo aqui debajo, se llama playAudio
+	    	// here I am calling the function below to make the audio play
            playconcert();
 	    }
 

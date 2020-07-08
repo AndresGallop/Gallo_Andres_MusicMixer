@@ -3,12 +3,13 @@
 
 	const musicGenre = document.querySelectorAll('#buttonHolder img'),
 	      theAnimals = document.querySelectorAll('.drop'),
-	      scenario = document.querySelector('.sound-board');
+	      scenario = document.querySelector('.sound-board'),
+				farm = document.querySelector('.sound-pieces');
 
 
 	let animalNames = ["left", "midLeft", "midRight", "right"],
 	    theSounds = document.querySelectorAll('.sound'),
-	    audio = document.querySelector("audio"),
+	    audio =  document.querySelector("audio"),
 			theGenres = document.querySelectorAll(".concert");
 
 
@@ -19,7 +20,20 @@
 		function changeMusicGenre(event) {
 
 			console.log('Let´s play');
+
+
+
 			scenario.style.backgroundImage = `url(images/genre${this.dataset.bgkey}.jpg)`;
+
+			theAnimals.forEach((animal) => {
+
+            while (animal.firstChild)
+            {let thisChild = animal.removeChild(animal.firstChild);
+
+
+                farm.appendChild(thisChild);
+            }
+        })
 
 			}
 
@@ -43,9 +57,14 @@
 			console.log('dropped me');
 
 			let soundOn = event.dataTransfer.getData("soundTaken");
-
-
+if (event.currentTarget.children.length === 0) {
 				event.target.appendChild(document.querySelector(`#${soundOn}`));
+			}
+
+			else {
+				console.log('this spot is busy.')
+
+			}
 
 		}
 
@@ -57,7 +76,7 @@
 
 			console.log('Proving if it works');
 	    	// the 'this' keyword refers to the image you've clicked on
-	    	let currentTrack = `assets/${this.dataset.track}`; //ESTO ES DINAMICO, LO QUE SIGNIFICA QUE VA A CAMBIAR
+	    	let currentTrack =  `assets/${this.dataset.track}`; //ESTO ES DINAMICO, LO QUE SIGNIFICA QUE VA A CAMBIAR
 
 
 	    	audio.src = currentTrack;
@@ -69,8 +88,11 @@
 
 	    function playAudio() {
 	    	// play the audio track
-	    	audio.play();              //<------Es una funcion porque tiene los brackets ahí
+
+				audio.play();              //<------Es una funcion porque tiene los brackets ahí
+
 		}
+
 
 
 		function startconcert () {
@@ -91,34 +113,13 @@
 
 	    function playconcert() {
 	    	// play the audio track
-	    	audio.play();              //<------Es una funcion porque tiene los brackets ahí
+
+
+        audio.play();
+				new Audio(audio.src).play();
+	      //new Audio('file.mp3').play()
+
 		}
-
-
-
-		/*function playsound2 (event) {
-
-			console.log('great song');
-
-			let card1 = event.keyCode;
-
-		//take card1 (the KeyCode) and find the matching audio element
-        //using the custom data-key attribute
-
-        //ESTA VARIABLE BUSCA SI EL CODIGO (Keycode = 85 por ejemplo) EXISTE Y LO GUARDA EN ESTA MISMA
-        //Y SELECCIONA EL CÓDIGO DE LA VARIABLE CARD1 PORQUE CARD1 = (Keycode = 85 por ejemplo) AHORA
-		let card2 = document.querySelector(`audio[data-track="${card1}" ]`);
-
-
-
-		//if you have a match, play card2 (the matching audio element)
-		//Si cogió algo (Keycode = 85 por ejemplo) pues reproduzcalo parce
-		if (card2) { card2.play(); }
-
-		//debugger;
-
-		}*/
-
 
 
 	//MAKING THE FUNCTIONS RUN
@@ -142,10 +143,5 @@
 
 
 		 changeMusicGenre.call(musicGenre[0]);
-
-
-
-
-
 
 })();

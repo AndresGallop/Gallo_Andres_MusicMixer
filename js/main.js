@@ -89,7 +89,8 @@ if (event.currentTarget.children.length === 0) {
 	    function playAudio() {
 	    	// play the audio track
 
-				audio.play();              //<------Es una funcion porque tiene los brackets ahí
+				audio.play();
+				new Audio(audio.src).play();              //<------Es una funcion porque tiene los brackets ahí
 
 		}
 
@@ -116,7 +117,8 @@ if (event.currentTarget.children.length === 0) {
 
 
         audio.play();
-				new Audio(audio.src).play();
+				new Audio(audio.src).play(); 
+
 	      //new Audio('file.mp3').play()
 
 		}

@@ -2,6 +2,7 @@ body{
 	display: flex;
 	margin-left: 150px;
 	margin-right: 150px;
+	background-color: black;
 }
 
 .topMenu {
@@ -11,6 +12,12 @@ body{
 	flex-direction: column;
 }
 
+.logo{
+	width: 150px;
+	height: 50px;
+	margin-right: 420px;
+	background-color: lightblue;
+}
 
 .menu{
 	display: flex;
@@ -18,25 +25,23 @@ body{
 	align-items: center;
 	width: 1080px;
 	height: 60px;
-	background-color: Black;
+	background-color: rgba(255, 54, 0, 1);
 }
 
-.menuNav a{
-	color: white;
-	font-style: italic;
+h1{
+	color: White;
+	font-family: 'Balsamiq Sans', cursive;
+	margin-left: 40px;
 }
 
-.logo{
-	width: 150px;
-	height: 50px;
-	background-color: red;
-	margin-right: 365px;
-
+h2{
+	font-size: 50px;
+	font-family: 'Balsamiq Sans', cursive;
 }
 
 ul{
 	width: 500px;
-	margin-right: 50px;
+	margin:0;
 	list-style: none;
 	display: flex;
 	justify-content: flex-end;
@@ -46,70 +51,171 @@ a{
 	display: block;
 	padding: 10px 20px;
 	text-decoration: none;
-	color: Black;
+	color: white;
 }
 
-
-h2{
-	font-family: 'Domine', serif;
-	font-style: italic;
+a:hover{
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: black;
+	background-color:  #9666ff;
 }
 
-h3{
-	font-family: 'Domine', serif;
-}
-
-h1{
-	font-family: 'Domine', serif;
-}
-
-p{
-	font-family: 'Domine', serif;
-font-family: 'Roboto', sans-serif;
-}
 
 .game{
-	height: 600px;
 	display: flex;
-	justify-content: center; 
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+
 }
+
+.titl{
+	margin-top: 0px;
+	margin-right: 750px;
+	font-size: 12px;
+	color: grey;
+
+}
+
+.hidden{
+	align-self: flex-start;
+	margin-left: 20px;
+
+}
+
+.bands{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 1000px;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
+	background-color: ;
+}
+
+img {
+	width: 120px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.boards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
 
 
 .button a{
 	display: flex;
 	justify-content: center;
+	align-items:center;
+	width: 40px;
+	height: 10px;
+	color: black;
+	background-color: #9666ff;
+	border: solid 2px black;
+	margin-right: 840px;
+	margin-bottom: 0px;
+}
+
+#buttonHolder{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 200px;
+	height: 400px;
+	background-color: rgba(204, 255, 51, 0.5);
+	margin-right: 20px;
+	justify-content:space-around;
 	align-items: center;
-	width: 60px;
-	background-color: pink;
-	margin-right:750px; 
+}
+
+.none{
+	display: none
 }
 
 .sound-board{
 	display: flex;
-	width: 850px;
-	height: 350px;
-	background-color: blue;
+	justify-content: center;
+	width: 700px;
+	height: 400px;
+	background-image: url(../images/rock.jpg);
+	background-size: cover;
+}
+
+.drop{
+	width: 120px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0.30);
+	margin-top: 100px;
+	margin-right: 40px;
+	border-radius: 40px;
+}
+
+
+.cat{
+
+	background-image: url(../images/catt.png);
+	background-position: center;
+}
+
+.dog{
+
+	background-image: url(../images/catt.png);
+	background-position: center;
+}
+
+.chicken{
+
+	background-image: url(../images/catt.png);
+	background-position: center;
+}
+
+.sheep{
+
+	background-image: url(../images/catt.png);
+	background-position: center;
 }
 
 .hidden{
-	display: none;
+	margin-top: 20px;
+	width: 170px;
+
 }
 
-.control{
-	display: flex;
-	width: 700px;
-	height: 150px;
-	background-color: green;
+.sound_title{
+	margin-top: 40px;
 }
+
+.sound-pieces{
+	display: flex;
+	width: 920px;
+	height:100px;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(128, 0, 128, 0.5);
+	margin-bottom: 30px;
+}
+
+
+
+
+/*+++++++++++++++++++++++++++*/
 
 .footer{
 	display: flex;
 	width: 1080px;
-	height: 260px;
-	background-color: black;
+	height: 280px;
+	background-color: rgba(255, 54, 0, 1);
 	justify-content: center;
 	justify-content: space-around;
 	align-items: center;
@@ -117,77 +223,33 @@ font-family: 'Roboto', sans-serif;
 	padding-bottom: -20px;
 }
 
-.icons{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 300px;
-	height: 50px;
-	margin:40px;
-}
-
-.iconi{
-	width: 40px;
-	height: 40px;
-	background-image: url(../images/insta.jpg);
-	background-size: cover;
-	background-position:center;
-}
-
-.iconf{
-	width: 40px;
-	height: 40px;
-	background-image: url(../images/fbook.png);
-	background-size: cover;
-	background-position:center;
-}
-
-.icont{
-	width: 40px;
-	height: 40px;
-	background-image: url(../images/twit.jpg);
-	background-size: cover;
-	background-position:center;
-}
-
-/*FOOTER*/
- 
 .footer p{
 	color: white;
 }
 
-.buttones{
-	margin-top:  -20px;
+
+.buttonf  a{
+	color: black;
 	display: flex;
+	width: 130px;
+	height: 10px;
+	border: solid 2px black;
 	justify-content: center;
-	align-items: center;
-	width: 200px;
-	height: 30px;
+	align-items:center;
+	background-color: #9666ff;
 }
 
-.buttonf{
-	display: flex;
-	width: 145px;
-	height: 20px;
-	border: solid 2px ;
-	justify-content: center;
-	align-items:flex-end;
+.buttonf  a:hover{
+	background-color: pink;
 }
 
-.buttonf a{
-	display: flex;
-	justify-content: center;
-	border: solid 2px white; 
-	width: 145px;
+
+.hiddenn{
+	display: none;
 }
 
-a:hover{
-	background-color: lightblue;
-
-}
 
 .footer h2{
-	margin-top: 45px;
 	color: white;
 	letter-spacing: 3px;
 	margin-bottom: 40px;
@@ -202,15 +264,15 @@ a:hover{
 }
 
 .line{
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 	width: 950px;
 	height: 1px;
-	background-color: grey;
+	background-color: white;
 }
 
 
 .final p{
-	margin-bottom: 10px;
-	color: grey;
+	margin-bottom: 0px;
+	color: white;
 	font-size: 12px;
 }

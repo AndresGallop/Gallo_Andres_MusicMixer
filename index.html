@@ -5,8 +5,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Farmy</title>
-	<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Domine&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="mainContainer">
@@ -17,8 +16,8 @@
 				<nav class="menuNav">
 					<ul>
 						<li><a href="index.html">Demo</a></li>
-						<li><a href="contact.html">Contact</a></li>
-						
+						<li><a href="#">How to play</a></li>
+
 					</ul>
 				</nav>
 			</section>
@@ -29,57 +28,75 @@
 				<li><a href="#">Reset</a></li>
 			</div>
 
-			<!-- Switch the Band -->
-        <p>click the band to change animals and sounds!</p>
-        <nav id="buttonHolder">
-            <h3 class="hidden">Select Image</h3>
-            <img src="images/rock.jpg" data-bgkey="0" alt="puzzle background image">
-            <img src="images/jazz.jpg" data-bgkey="1" alt="puzzle background image">
-            <img src="images/metal.jpg" data-bgkey="2" alt="puzzle background image">
-            <img src="images/reggae.jpg" data-bgkey="3" alt="puzzle background image">
-        </nav>
+			<!-- Switch the Scenario -->
+	    <section class="bands">
+
+        <h1 class="titl">Click the band to change Scenario!</h1>
+        <div class="boards">
+        <div id="buttonHolder">
+            <h1 class="hidden">Select Musical Genre</h1>
+            <img class="concert" src="images/rock.jpg" data-track="rock.mp3" data-bgkey="0" alt="scenario image">
+            <img class="concert" src="images/jazz.jpg" data-track="jazz.mp3" data-bgkey="1" alt="scenario image">
+            <img class="concert" src="images/metal.jpg" data-track="metal.mp3" data-bgkey="2" alt="scenario image">
+            <img class="concert" src="images/reggae.jpg" data-track="reggae.mp3" data-bgkey="3" alt="scenario image">
+        </div>
 
 			<!-- drop the sound pieces here -->
         <div class="sound-board">
-            <h3 class="hidden">The Drop Zone</h3>
+            <h1 class="none">The Drop Zone</h1>
+            <div class="drop cat"></div>
             <div class="drop dog"></div>
             <div class="drop chicken"></div>
             <div class="drop sheep"></div>
+
         </div>
-			 <!-- these are the draggable sound pieces -> drag them to the top -->
+        </div>
+        </section>
+
+			 <!-- these are the draggable sound pieces -> drag them to the top /////////////////////////////////////-->
         <div class="sound-pieces"><!-- parent node-->
-            <h3 class="hidden">The Drag Zone</h3>
-            <img id='miaw' data-track="miaw.mp3" src="images/miaw.jpg" alt="miaw" class="puzzle-image 0" draggable="true">
-            <img id='guau' data-track="guau.mp3" src="images/guau.jpg" alt="guau" class="puzzle-image 1" draggable="true">
-            <img id='pio' data-track="pio.mp3" src="images/pio.jpg" alt="pio" class="puzzle-image 3" draggable="true">
-            <img id='beee' data-track="beee.mp3" src="images/beee.jpg" alt="beee" class="puzzle-image 3" draggable="true">
-        </div><!-- end parent node-->
+            <h1 class="hidden sound_title">Sounds:</h1>
+            <img id='meow' data-track="meow.mp3" src="images/miaw.jpg" alt="meow" class="sound" draggable="true">
+            <img id='guau' data-track="guau.mp3" src="images/guau.jpg" alt="guau" class="sound" draggable="true">
+            <img id='pio' data-track="pio.mp3" src="images/pio.jpg" alt="pio" class="sound" draggable="true">
+            <img id='beee' data-track="beee.mp3" src="images/beee.jpg" alt="beee" class="sound" draggable="true">
+        </div><!-- end parent node/////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--Audios of the animals-->
+        <audio data-track="meow.mp3" src="assets/meow.mp3"></audio>
+        <audio data-track="guau.mp3" src="assets/guau.mp3"></audio>
+        <audio data-track="pio.mp3" src="assets/pio.mp3"></audio>
+        <audio data-track="beee.mp3" src="assets/beee.mp3"></audio>
+
+<!--Audios of the scenarios-->
+				<audio  data-track="rock.mp3" src="assets/rock.mp3"></audio>
+				<audio  data-track="jazz.mp3" src="assets/jazz.mp3"></audio>
+				<audio  data-track="metal.mp3" src="assets/metal.mp3"></audio>
+				<audio  data-track="reggae.mp3" src="assets/beee.mp3"></audio>
+
+
+
 		</section>
+
+
+
 
 		<div class="footer">
 
-          <section class="icons">
-			<section class="iconi"></section>
-			<section class="iconf"></section>
-			<section class="icont"></section>
-		  </section>
+			<div class="buttonf">
+				<li><a href="#">Download App</a></li>
+			</div>
 
 
-			<section class="buttones">
-			<section class="buttonf">
-				<li><a href="#"><p>Download App</p></a></li>
-			</section>
-		    </section>
-
-
-			<h2>Replay</h2>
+			<h2>Farmy</h2>
 
 			<section class="final">
-			<section class="line"></section>
-			<p class="copy">Copyright 2020 Replay.</p>
+			<div class="line"></div><br>
+			<p class="copy">Copyright 2020 Farmy.</p>
 			</section>
 
-		</div>		
+		</div>
 	</div>
 	<script src="js/main.js"></script>
 </body>

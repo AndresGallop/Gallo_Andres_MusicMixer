@@ -38,10 +38,22 @@
 	function drop(event) {
 		console.log('dropped me');
 
-		let soundOn = event.dataTransfer.getData("soundTaken");
+		let soundOn = event.dataTransfer.getData("soundTaken"),
+			currentTrack = document.querySelector(`#${soundOn}`).dataset.track;
+
+			debugger;
 
 		if (event.currentTarget.children.length === 0) {
 			event.target.appendChild(document.querySelector(`#${soundOn}`));
+
+			let currentSound = document.createElement('audio');
+			currentSound.src = `assets/${currentTrack}`;
+
+			currentSound.load();
+			currentSound.loop = "true";
+			document.body.appendChild(currentSound);
+
+			currentSound.play();
 		}
 
 		else {

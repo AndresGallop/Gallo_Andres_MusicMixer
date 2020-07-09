@@ -2,21 +2,39 @@ body{
 	display: flex;
 	margin-left: 150px;
 	margin-right: 150px;
+<<<<<<< HEAD
 	background-color: black;
+=======
+	background-image: url(../images/back.jpg);
+	background-size: cover;
+>>>>>>> des.gallo.artwork
 }
 
 .topMenu {
 	display: flex;
 	width: 1080px;
-	height: 75px;
+	height: 100px;
 	flex-direction: column;
 }
 
 .logo{
+<<<<<<< HEAD
 	width: 150px;
 	height: 50px;
 	margin-right: 420px; 
 	background-color: lightblue;
+=======
+	width: 100px;
+	height: 100px;
+	margin-right: 400px;
+	margin-top: 50px;
+	border: 20px;
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	background-color: lightblue;
+	border: solid 2px black;
+	border-radius: 10px;
+>>>>>>> des.gallo.artwork
 }
 
 .menu{
@@ -25,6 +43,7 @@ body{
 	align-items: center;
 	width: 1080px;
 	height: 60px;
+<<<<<<< HEAD
 	background-color: rgba(255, 54, 0, 1);
 }
 
@@ -37,6 +56,24 @@ h1{
 h2{
 	font-size: 50px;
 	font-family: 'Balsamiq Sans', cursive; 
+=======
+	background-color: black;
+}
+
+.mainContainer{
+	background-color: rgb(255, 255, 255, 0.25);
+}
+
+h1{
+	color: White;
+	font-family: 'Balsamiq Sans', cursive;
+	margin-left: 40px;
+}
+
+h2{
+	font-size: 50px;
+	font-family: 'Balsamiq Sans', cursive;
+>>>>>>> des.gallo.artwork
 }
 
 ul{
@@ -52,6 +89,7 @@ a{
 	padding: 10px 20px;
 	text-decoration: none;
 	color: white;
+<<<<<<< HEAD
 }
 
 a:hover{
@@ -69,6 +107,25 @@ a:hover{
 	align-items: center;
 	flex-direction: column;
 
+=======
+}
+
+a:hover{
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: black;
+	background-color:  #9666ff;
+}
+
+
+.game{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+>>>>>>> des.gallo.artwork
 }
 
 .titl{
@@ -76,13 +133,21 @@ a:hover{
 	margin-right: 750px;
 	font-size: 12px;
 	color: grey;
+<<<<<<< HEAD
+=======
+	display: none;
+>>>>>>> des.gallo.artwork
 
 }
 
 .hidden{
 	align-self: flex-start;
 	margin-left: 20px;
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> des.gallo.artwork
 }
 
 .bands{
@@ -132,21 +197,45 @@ img {
 	flex-direction: column;
 	width: 200px;
 	height: 400px;
+<<<<<<< HEAD
 	background-color: rgba(204, 255, 51, 0.5);
+=======
+	background-color: #ffc200;
+	border: solid 2px black;
+>>>>>>> des.gallo.artwork
 	margin-right: 20px;
 	justify-content:space-around;
 	align-items: center;
+}
+
+<<<<<<< HEAD
+.none{
+	display: none
+}
+
+=======
+img{
+	border-radius: 10px;
+}
+
+img:hover{
+	transform: scale(1.1);
 }
 
 .none{
 	display: none
 }
 
+>>>>>>> des.gallo.artwork
 .sound-board{
 	display: flex;
 	justify-content: center;
 	width: 700px;
+<<<<<<< HEAD
 	height: 400px; 
+=======
+	height: 400px;
+>>>>>>> des.gallo.artwork
 	background-image: url(../images/rock.jpg);
 	background-size: cover;
 }
@@ -162,6 +251,7 @@ img {
 
 
 .cat{
+<<<<<<< HEAD
 	
 	background-image: url(../images/catt.png);
 	background-position: center;
@@ -195,6 +285,49 @@ img {
 	margin-top: 40px;
 }
 
+=======
+
+	background-image: url(../images/sign.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.dog{
+
+	background-image: url(../images/sign.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.chicken{
+
+	background-image: url(../images/sign.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.sheep{
+
+	background-image: url(../images/sign.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.hidden{
+	margin-top: 20px;
+	width: 170px;
+
+}
+
+.sound_title{
+	margin-top: 40px;
+}
+
+>>>>>>> des.gallo.artwork
 .sound-pieces{
 	display: flex;
 	width: 920px;
@@ -203,6 +336,10 @@ img {
 	justify-content: space-around;
 	align-items: center;
 	background-color: rgba(128, 0, 128, 0.5);
+<<<<<<< HEAD
+=======
+	border: solid 2px black;
+>>>>>>> des.gallo.artwork
 	margin-bottom: 30px;
 }
 
@@ -215,18 +352,31 @@ img {
 	display: flex;
 	width: 1080px;
 	height: 280px;
+<<<<<<< HEAD
 	background-color: rgba(255, 54, 0, 1);
+=======
+	background-color: black;
+>>>>>>> des.gallo.artwork
 	justify-content: center;
 	justify-content: space-around;
 	align-items: center;
 	flex-direction:column;
 	padding-bottom: -20px;
+<<<<<<< HEAD
 }
 
 .footer p{
 	color: white;
 }
 
+=======
+}
+
+.footer p{
+	color: white;
+}
+
+>>>>>>> des.gallo.artwork
 
 .buttonf  a{
 	color: black;
@@ -236,7 +386,11 @@ img {
 	border: solid 2px black;
 	justify-content: center;
 	align-items:center;
+<<<<<<< HEAD
 	background-color: #9666ff;
+=======
+	background-color: lightblue;
+>>>>>>> des.gallo.artwork
 }
 
 .buttonf  a:hover{

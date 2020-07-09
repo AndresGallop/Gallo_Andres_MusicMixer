@@ -32,4 +32,10 @@ names that we want - so topLeft0.jpg, topRight0.jpg, bottomLeft0.jpg, bottomRigh
 - Can either create the images on the fly or reset the image sources as we go to change
 them to the current puzzle pieces
 - Also need to empty out the drop zones so that we can drag new pieces in (debug this)
+
+#Problems and bugs
+
+July 7 / 2020
+
+I found that I can make the animals sound when click them so I changed the event to drop but now just the cat sound, for all the files, so I will make a research on it, I think it maybe is somehting about forEach. codes but I am not sure. Still haven´t solved my bugs for overposition of elements in a div, so I will limit each div to just one element at a time.
     

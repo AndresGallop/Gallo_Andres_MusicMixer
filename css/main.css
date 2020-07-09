@@ -12,10 +12,11 @@ body{
 	flex-direction: column;
 }
 
-.ad{
-	width: 1080px;
-	height: 15px;
-	background-color: black;
+.logo{
+	width: 150px;
+	height: 50px;
+	margin-right: 420px; 
+	background-color: lightblue;
 }
 
 .menu{
@@ -23,7 +24,7 @@ body{
 	justify-content: flex-end;
 	align-items: center;
 	width: 1080px;
-	height: 40px;
+	height: 60px;
 	background-color: rgba(255, 54, 0, 1);
 }
 
@@ -97,6 +98,12 @@ a:hover{
 	background-color: ;
 }
 
+img {
+	width: 120px;
+	padding: 0px;
+	margin: 0px;
+}
+
 .boards{
 	display: flex;
 	justify-content: center;
@@ -128,21 +135,64 @@ a:hover{
 	background-color: rgba(204, 255, 51, 0.5);
 	margin-right: 20px;
 	justify-content:space-around;
+	align-items: center;
+}
+
+.none{
+	display: none
 }
 
 .sound-board{
 	display: flex;
 	justify-content: center;
 	width: 700px;
-	height: 400px;
+	height: 400px; 
 	background-image: url(../images/rock.jpg);
 	background-size: cover;
 }
 
+.drop{
+	width: 120px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0.30);
+	margin-top: 100px;
+	margin-right: 40px;
+	border-radius: 40px;
+}
+
+
 .cat{
-	width: 80px;
-	height: 80px;
-	background-image: url(images/cat.jpg);
+	
+	background-image: url(../images/catt.png);
+	background-position: center;
+}
+
+.dog{
+	
+	background-image: url(../images/catt.png);
+	background-position: center;
+}
+
+.chicken{
+	
+	background-image: url(../images/catt.png);
+	background-position: center;
+}
+
+.sheep{
+	
+	background-image: url(../images/catt.png);
+	background-position: center;
+}
+
+.hidden{
+	margin-top: 20px;
+	width: 170px;
+
+}
+
+.sound_title{
+	margin-top: 40px;
 }
 
 .sound-pieces{
@@ -193,14 +243,6 @@ a:hover{
 	background-color: pink;
 }
 
-.drop{
-	width: 120px;
-	height: 250px;
-	background-color: rgba(255, 255, 255, 0.30);
-	margin-top: 100px;
-	margin-right: 40px;
-	border-radius: 40px;
-}
 
 .hiddenn{
 	display: none;

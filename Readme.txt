@@ -1,6 +1,5 @@
 #Farmy
 
-
 Dev Notes
 
 Concept: Drag and Drop Music Mixer App
@@ -33,31 +32,10 @@ names that we want - so topLeft0.jpg, topRight0.jpg, bottomLeft0.jpg, bottomRigh
 - Can either create the images on the fly or reset the image sources as we go to change
 them to the current puzzle pieces
 - Also need to empty out the drop zones so that we can drag new pieces in (debug this)
+
+#Problems and bugs
+
+July 7 / 2020
+
+I found that I can make the animals sound when click them so I changed the event to drop but now just the cat sound, for all the files, so I will make a research on it, I think it maybe is somehting about forEach. codes but I am not sure. Still haven´t solved my bugs for overposition of elements in a div, so I will limit each div to just one element at a time.
     
-
-The name of my music mixer project is Farmy, it is easy to learn which makes it more confortable for the users when think about the app.
-
-It will be an one page web where I will implement drag and drop functionality to load audio clips and create
-a dynamic audio experience, trigger animation, and play a compiled audio track.
-
-Create a UI with draggable sounds pieces; user drags each piece to a drop zone (Band) to create its own sound track. When the user choose a different band, the entire should reset with the new draggable sounds and leave the band empty.
-
-Farmy Breakdown:
-- User drags a sound piece from the bottom sound area to the drop zone and place it in one of the five characters(animals) in there.
--Each piece of sound will have a sign on it that users eventually will start to differentiate and match with each sound.
--Replay will have a reset button.
--Allow removing Sound pieces/drag back to the bottom? To be added later 
-
-Files:
-I am going to include SVG files, .mp3 files
-
-Functions:
-JavaScript .mp3 reproduction
-JavaScript Drag and Drop
-JavaScript Events and Functions
-
-Design:
-Replay app will have many Characters tan will open their mouths when the JavaScripts.
-
- 
-

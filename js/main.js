@@ -6,7 +6,7 @@
 	      	scenario = document.querySelector('.sound-board'),
 					farm = document.querySelector('.sound-pieces');
 
-	let animalNames = ["left", "midLeft", "midRight", "right"],
+	let     animalNames = ["left", "midLeft", "midRight", "right"],
 	    		theSounds = document.querySelectorAll('.sound'),
 	    		audio =  document.querySelector("audio"),
 					theGenres = document.querySelectorAll(".concert");
@@ -39,10 +39,9 @@ function drag(event) {
 
 		event.dataTransfer.setData(let = "soundTaken", this.id);
 
+		/*var este = document.querySelectorAll('audio');
 
-
-		
-
+		 for(i=0; i<este.length; i++) este[i].pause();*/
 
 
 }
@@ -89,7 +88,7 @@ function drop(event) {
 
 function shutup() {
 
-     var sounds = document.getElementsByTagName('audio');
+     	var sounds = document.getElementsByTagName('audio');
 
     	for(i=0; i<sounds.length; i++) sounds[i].pause();
 }

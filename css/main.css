@@ -173,6 +173,9 @@ img:hover{
 }
 
 .drop{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 120px;
 	height: 250px;
 	background-color: rgba(255, 255, 255, 0.30);

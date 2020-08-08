@@ -67,6 +67,12 @@ function drop(event) {
 
 			event.target.appendChild(document.querySelector(`#${soundOn}`));
 
+			if (document.querySelector(`audio[src="assets/${currentTrack}"]`)){
+
+				return;
+			}
+
+
 		let currentSound = document.createElement('audio');
 				currentSound.src = `assets/${currentTrack}`;
 
@@ -82,6 +88,7 @@ function drop(event) {
 		else {
 
 			console.log('this spot is busy.');
+
 		}
 }
 
@@ -99,6 +106,8 @@ function startconcert () { //PLAY THE AUDIOS THAT MATCH THE SCENARIOS(MUSICAL GE
 		console.log('DO IT');
 
 		let musicalscenario = `assets/${this.dataset.track}`; //THIS IS DINAMIC, QHICH MEANS IT CAN CHANGE /the 'this' keyword refers to the image or element you've clicked on
+
+
 
 		audio.src = musicalscenario;
 
